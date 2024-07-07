@@ -4,7 +4,7 @@ import {
   PaperClipIcon,
 } from "@heroicons/react/20/solid";
 
-export default function TodoItem({ todo, deleteTodo, ToggleTodo }) {
+export default function TodoItem({ todo, deleteTodo, toggleTodo }) {
   return (
     <section className="p-6">
       <div className="overflow-hidden rounded-lg shadow-sm focus-within:border-indigo-500 focus-within:ring-1 focus-within:ring-indigo-500 p-5 w-full">
@@ -78,7 +78,7 @@ export default function TodoItem({ todo, deleteTodo, ToggleTodo }) {
             <button
               type="submit"
               className="inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 space-x-3"
-              onClick={ToggleTodo}
+              onClick={toggleTodo}
             >
               <span>Valider la tâche</span>
               <CheckIcon

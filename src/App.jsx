@@ -15,7 +15,7 @@ export default function App() {
     setTodiList([...todoList, todo]);
   }
 
-  function ToggleTodo(id) {
+  function toggleTodo(id) {
     setTodiList(
       todoList.map((todo) =>
         todo.id === id ? { ...todo, done: !todo.done } : todo
@@ -32,7 +32,7 @@ export default function App() {
       <AddTodo addTodo={addTodo} />
       <TodoList
         todoList={todoList}
-        ToggleTodo={ToggleTodo}
+        toggleTodo={toggleTodo}
         deleteTodo={deleteTodo}
       />
     </>
