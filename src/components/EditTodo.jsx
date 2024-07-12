@@ -38,7 +38,10 @@ export default function EditTodo({ todo, editTodo, cancelEditTodo }) {
               placeholder="Nom de la tâche"
             />
           </div>
-          <button className="ml-5 mr-5" onClick={cancelEditTodo}>
+          <button
+            className="ml-5 mr-5 w-28 rounded-md hover:bg-gray-100 py-2"
+            onClick={cancelEditTodo}
+          >
             Annuler
           </button>
           <button
