@@ -18,7 +18,7 @@ export default function App() {
     setTodoList([...todoList, todo]);
   }
 
-  function toogleEditTodo(id) {
+  function toggleEditTodo(id) {
     setTodoList(
       todoList.map((todo) =>
         todo.id === id
@@ -60,7 +60,7 @@ export default function App() {
       <TodoList
         todoList={todoList}
         toggleTodo={toggleTodo}
-        toogleTodoEdit={toogleEditTodo}
+        toggleEditTodo={toggleEditTodo}
         editTodo={editTodo}
         deleteTodo={deleteTodo}
       />
