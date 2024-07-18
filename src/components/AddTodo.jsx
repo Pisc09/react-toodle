@@ -23,12 +23,13 @@ export default function AddTodo({ addTodo }) {
   }
 
   return (
-    <div className="bg-white shadow sm:rounded-lg">
+    <div className="bg-white dark:bg-slate-900 shadow sm:rounded-lg">
       <div className="px-4 py-5 sm:p-6">
-        <h3 className="text-2xl font-semibold leading-6 text-indigo-600">
+        <h1>As salam</h1>
+        <h3 className="text-2xl dark:text-indigo-400 font-semibold leading-6 text-indigo-600">
           TodoBoost Listify
         </h3>
-        <div className="mt-2 max-w-xl text-lg text-gray-500">
+        <div className="mt-2 max-w-xl dark:text-gray-400 text-lg text-gray-500">
           <p>Ajoutez les tâches que vous voulez gérer dans votre liste.</p>
         </div>
         <form className="mt-5 sm:flex sm:items-center">
